@@ -40,8 +40,8 @@ Ces fichiers ont été chargés dans BigQuery dans deux datasets distincts :
    bq load --source_format=CSV --autodetect <project_id>:sales_recrutement.sales sales_recrutement.csv
    ```
 
-2. **Configurer dbt**
-   Configurez votre fichier `profiles.yml` pour connecter dbt à votre projet BigQuery. [Guide de configuration]([https://docs.getdbt.com/docs/connecting-to-databases#bigquery](https://docs.getdbt.com/docs/introduction)).
+2. **Configurer dbt**  
+   Configurez votre fichier `profiles.yml` pour connecter dbt à votre projet BigQuery. Suivez ce [guide de configuration](https://docs.getdbt.com/docs/introduction) pour plus de détails.
 
 3. **Exécuter les Modèles dbt**
    Dans le répertoire racine du projet, exécutez la commande suivante pour transformer les données et créer les tables/vues nécessaires :
