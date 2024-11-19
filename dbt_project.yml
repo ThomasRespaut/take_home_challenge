@@ -1,0 +1,21 @@
+name: take_home_challenge
+version: 1.0
+config-version: 2
+
+profile: take_home_challenge  # Le nom du profil défini dans `profiles.yml`
+
+# Où dbt trouvera les modèles SQL et générera les tables
+model-paths: ["models"]  # Répertoire contenant les modèles SQL
+
+# Emplacements des analyses et tests
+analysis-paths: ["analysis"]
+test-paths: ["tests"]
+
+# Documentation
+target-path: "target"  # Dossier de sortie pour les artefacts
+clean-targets: ["target", "dbt_modules"]
+
+# Configuration des modèles par défaut
+models:
+  take_home_challenge:
+    +materialized: view  # Par défaut, les modèles seront matérialisés comme des vues

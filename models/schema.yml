@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: orders_recrutement
+    description: "Dataset contenant les commandes des clients."
+    tables:
+      - name: orders
+        description: "Table listant les commandes avec leurs métadonnées."
+
+  - name: sales_recrutement
+    description: "Dataset contenant les ventes réalisées par produit."
+    tables:
+      - name: sales
+        description: "Table listant les produits vendus dans chaque commande."
