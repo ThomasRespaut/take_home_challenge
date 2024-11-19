@@ -41,7 +41,7 @@ Ces fichiers ont été chargés dans BigQuery dans deux datasets distincts :
    ```
 
 2. **Configurer dbt**
-   Configurez votre fichier `profiles.yml` pour connecter dbt à votre projet BigQuery. [Guide de configuration](https://docs.getdbt.com/docs/connecting-to-databases#bigquery).
+   Configurez votre fichier `profiles.yml` pour connecter dbt à votre projet BigQuery. [Guide de configuration]([https://docs.getdbt.com/docs/connecting-to-databases#bigquery](https://docs.getdbt.com/docs/introduction).
 
 3. **Exécuter les Modèles dbt**
    Dans le répertoire racine du projet, exécutez la commande suivante pour transformer les données et créer les tables/vues nécessaires :
