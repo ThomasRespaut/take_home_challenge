@@ -2,6 +2,8 @@
 
 Ce projet a été réalisé dans le cadre d'un défi technique pour le poste de Data Analyst / BI Engineer chez Astrafy. Il vise à démontrer mes compétences en analyse de données et en ingénierie BI en utilisant **dbt** et **BigQuery**.
 
+Le défi se compose de plusieurs exercices visant à analyser des données de commandes et de ventes pour les années 2022 et 2023. Les exercices incluent le calcul du nombre de commandes, l'analyse mensuelle des commandes, le calcul du nombre moyen de produits par commande, la segmentation des commandes et la création de tables enrichies avec des informations supplémentaires.
+
 ---
 
 ## Résumé des Objectifs
@@ -13,6 +15,42 @@ L'objectif principal est d'analyser et de transformer des données de commandes 
 3. Calcul du nombre moyen de produits par commande.
 4. Segmentation des commandes.
 5. Création de tables enrichies avec des informations supplémentaires.
+
+---
+
+## Technologies Utilisées
+
+- **dbt (Data Build Tool)** : Outil de transformation de données permettant de créer et de gérer des modèles de données dans un entrepôt de données.
+- **BigQuery** : Service d'entrepôt de données de Google Cloud utilisé pour le stockage et l'analyse des données.
+
+---
+
+## Structure du Projet
+
+Le projet est structuré comme suit :
+
+```
+take_home_challenge/
+├── models/
+│   ├── avg_products_per_order.sql
+│   ├── order_segmentation.sql
+│   ├── orders_2022_2023_with_qty.sql
+│   ├── orders_2023.sql
+│   ├── orders_2023_with_segmentation.sql
+│   └── orders_by_month.sql
+├── data/
+│   ├── orders_recrutement.csv
+│   ├── orders_recrutement.xlsx
+│   ├── sales_recrutement.csv
+│   └── sales_recrutement.xlsx
+├── dbt_project.yml
+└── README.md
+```
+
+- **models/** : Contient les modèles dbt définis pour chaque exercice.
+- **data/** : Contient les fichiers de données sources utilisés pour les transformations.
+- **dbt_project.yml** : Fichier de configuration principal pour le projet dbt.
+- **README.md** : Ce fichier de documentation.
 
 ---
 
