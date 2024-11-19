@@ -2942,3 +2942,591 @@ ORDER BY
 [0m15:13:10.391167 [debug] [MainThread]: Command `dbt run` succeeded at 15:13:10.391167 after 5.68 seconds
 [0m15:13:10.391167 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000236A12EC380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000236A11485F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000236A0FEF6E0>]}
 [0m15:13:10.392323 [debug] [MainThread]: Flushing usage events
+[0m14:59:37.682885 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000235C142C530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000235C0D877D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000235C0D86A80>]}
+
+
+============================== 14:59:37.690798 | 10a14549-9757-4dfc-b477-33621e5f5ee0 ==============================
+[0m14:59:37.690798 [info ] [MainThread]: Running with dbt=1.8.7
+[0m14:59:37.691776 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\thoma\\.dbt', 'log_path': 'C:\\Users\\thoma\\PycharmProjects\\Take-Home challenge\\logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run --full-refresh', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m14:59:43.373039 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '10a14549-9757-4dfc-b477-33621e5f5ee0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000235D20DBFB0>]}
+[0m14:59:43.432051 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '10a14549-9757-4dfc-b477-33621e5f5ee0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000235D28FF8F0>]}
+[0m14:59:43.433052 [info ] [MainThread]: Registered adapter: bigquery=1.8.3
+[0m14:59:43.867196 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m14:59:45.376593 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:59:45.377601 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:59:45.422014 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '10a14549-9757-4dfc-b477-33621e5f5ee0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000235D3FD4EC0>]}
+[0m14:59:45.581895 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '10a14549-9757-4dfc-b477-33621e5f5ee0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000235D44878C0>]}
+[0m14:59:45.581895 [info ] [MainThread]: Found 6 models, 2 sources, 484 macros
+[0m14:59:45.582895 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '10a14549-9757-4dfc-b477-33621e5f5ee0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000235D4130C50>]}
+[0m14:59:45.584896 [info ] [MainThread]: 
+[0m14:59:45.585895 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:59:45.592000 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_takehomechallenge'
+[0m14:59:45.592000 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:59:45.593473 [debug] [ThreadPool]: BigQuery adapter: Got an error when attempting to create a bigquery client: '[Errno 2] No such file or directory: 'takehomechallenge-3334bc5c3555.json''
+[0m14:59:45.593473 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:59:45.593473 [debug] [MainThread]: Connection 'list_takehomechallenge' was properly closed.
+[0m14:59:45.594957 [info ] [MainThread]: 
+[0m14:59:45.595973 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 0.01 seconds (0.01s).
+[0m14:59:45.598323 [error] [MainThread]: Encountered an error:
+Database Error
+  [Errno 2] No such file or directory: 'takehomechallenge-3334bc5c3555.json'
+[0m14:59:45.599939 [debug] [MainThread]: Command `dbt run` failed at 14:59:45.599939 after 8.13 seconds
+[0m14:59:45.601144 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000235C142C530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000235C128F6E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000235D3FD6180>]}
+[0m14:59:45.602152 [debug] [MainThread]: Flushing usage events
+[0m15:00:37.253113 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9DBF8BC20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9DBBF92B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9DBDDC350>]}
+
+
+============================== 15:00:37.258197 | 22287306-c7aa-44e7-ac70-754c972a2344 ==============================
+[0m15:00:37.258197 [info ] [MainThread]: Running with dbt=1.8.7
+[0m15:00:37.258781 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\thoma\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\thoma\\PycharmProjects\\Take-Home challenge\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt run --full-refresh', 'send_anonymous_usage_stats': 'True'}
+[0m15:00:38.846980 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '22287306-c7aa-44e7-ac70-754c972a2344', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9D9B60E30>]}
+[0m15:00:38.896652 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '22287306-c7aa-44e7-ac70-754c972a2344', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9ED161940>]}
+[0m15:00:38.897657 [info ] [MainThread]: Registered adapter: bigquery=1.8.3
+[0m15:00:39.222906 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m15:00:39.376945 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:00:39.377958 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:00:39.404673 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '22287306-c7aa-44e7-ac70-754c972a2344', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9EEA99EB0>]}
+[0m15:00:39.505305 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '22287306-c7aa-44e7-ac70-754c972a2344', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9EEEA7380>]}
+[0m15:00:39.506588 [info ] [MainThread]: Found 6 models, 2 sources, 484 macros
+[0m15:00:39.507592 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '22287306-c7aa-44e7-ac70-754c972a2344', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9EEB50800>]}
+[0m15:00:39.508607 [info ] [MainThread]: 
+[0m15:00:39.509712 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m15:00:39.513466 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_takehomechallenge'
+[0m15:00:39.513466 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:00:40.051880 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_takehomechallenge_orders_recrutement'
+[0m15:00:40.053886 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:00:40.504450 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '22287306-c7aa-44e7-ac70-754c972a2344', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9EEB1D520>]}
+[0m15:00:40.504450 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:00:40.505456 [info ] [MainThread]: 
+[0m15:00:40.512153 [debug] [Thread-1 (]: Began running node model.take_home_challenge.avg_products_per_order
+[0m15:00:40.512153 [debug] [Thread-2 (]: Began running node model.take_home_challenge.order_segmentation
+[0m15:00:40.513190 [debug] [Thread-3 (]: Began running node model.take_home_challenge.orders_2022_2023_with_qty
+[0m15:00:40.513190 [debug] [Thread-4 (]: Began running node model.take_home_challenge.orders_2023
+[0m15:00:40.513190 [info ] [Thread-1 (]: 1 of 6 START sql view model orders_recrutement.avg_products_per_order .......... [RUN]
+[0m15:00:40.514523 [info ] [Thread-2 (]: 2 of 6 START sql view model orders_recrutement.order_segmentation .............. [RUN]
+[0m15:00:40.515740 [info ] [Thread-3 (]: 3 of 6 START sql view model orders_recrutement.orders_2022_2023_with_qty ....... [RUN]
+[0m15:00:40.516746 [info ] [Thread-4 (]: 4 of 6 START sql view model orders_recrutement.orders_2023 ..................... [RUN]
+[0m15:00:40.518763 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.take_home_challenge.avg_products_per_order'
+[0m15:00:40.520808 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.take_home_challenge.order_segmentation'
+[0m15:00:40.521809 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.take_home_challenge.orders_2022_2023_with_qty'
+[0m15:00:40.522808 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.take_home_challenge.orders_2023'
+[0m15:00:40.523808 [debug] [Thread-1 (]: Began compiling node model.take_home_challenge.avg_products_per_order
+[0m15:00:40.523808 [debug] [Thread-2 (]: Began compiling node model.take_home_challenge.order_segmentation
+[0m15:00:40.524808 [debug] [Thread-3 (]: Began compiling node model.take_home_challenge.orders_2022_2023_with_qty
+[0m15:00:40.525810 [debug] [Thread-4 (]: Began compiling node model.take_home_challenge.orders_2023
+[0m15:00:40.536150 [debug] [Thread-1 (]: Writing injected SQL for node "model.take_home_challenge.avg_products_per_order"
+[0m15:00:40.537751 [debug] [Thread-2 (]: Writing injected SQL for node "model.take_home_challenge.order_segmentation"
+[0m15:00:40.539969 [debug] [Thread-3 (]: Writing injected SQL for node "model.take_home_challenge.orders_2022_2023_with_qty"
+[0m15:00:40.541059 [debug] [Thread-4 (]: Writing injected SQL for node "model.take_home_challenge.orders_2023"
+[0m15:00:40.543570 [debug] [Thread-1 (]: Began executing node model.take_home_challenge.avg_products_per_order
+[0m15:00:40.543570 [debug] [Thread-2 (]: Began executing node model.take_home_challenge.order_segmentation
+[0m15:00:40.577610 [debug] [Thread-3 (]: Began executing node model.take_home_challenge.orders_2022_2023_with_qty
+[0m15:00:40.582608 [debug] [Thread-1 (]: Writing runtime sql for node "model.take_home_challenge.avg_products_per_order"
+[0m15:00:40.582608 [debug] [Thread-4 (]: Began executing node model.take_home_challenge.orders_2023
+[0m15:00:40.588077 [debug] [Thread-2 (]: Writing runtime sql for node "model.take_home_challenge.order_segmentation"
+[0m15:00:40.590367 [debug] [Thread-3 (]: Writing runtime sql for node "model.take_home_challenge.orders_2022_2023_with_qty"
+[0m15:00:40.593675 [debug] [Thread-4 (]: Writing runtime sql for node "model.take_home_challenge.orders_2023"
+[0m15:00:40.594853 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m15:00:40.596410 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m15:00:40.596410 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m15:00:40.597415 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m15:00:40.598560 [debug] [Thread-1 (]: On model.take_home_challenge.avg_products_per_order: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "take_home_challenge", "target_name": "dev", "node_id": "model.take_home_challenge.avg_products_per_order"} */
+
+
+  create or replace view `takehomechallenge`.`orders_recrutement`.`avg_products_per_order`
+  OPTIONS()
+  as SELECT
+    EXTRACT(MONTH FROM date_date) AS month,
+    AVG(qty) AS avg_products_per_order
+FROM
+    takehomechallenge.sales_recrutement.sales
+WHERE
+    EXTRACT(YEAR FROM date_date) = 2023
+GROUP BY
+    month
+ORDER BY
+    month;
+
+
+[0m15:00:40.601080 [debug] [Thread-2 (]: On model.take_home_challenge.order_segmentation: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "take_home_challenge", "target_name": "dev", "node_id": "model.take_home_challenge.order_segmentation"} */
+
+
+  create or replace view `takehomechallenge`.`orders_recrutement`.`order_segmentation`
+  OPTIONS()
+  as WITH order_counts AS (
+    SELECT
+        o.orders_id,
+        o.customers_id AS client_id,
+        o.date_date AS order_date,
+        COUNT(*) OVER (
+            PARTITION BY o.customers_id
+            ORDER BY o.date_date
+            ROWS BETWEEN 12 PRECEDING AND CURRENT ROW
+        ) AS orders_in_last_12_months
+    FROM
+        takehomechallenge.orders_recrutement.orders o
+    WHERE
+        EXTRACT(YEAR FROM o.date_date) = 2023
+)
+SELECT
+    o.orders_id,
+    o.client_id,
+    o.order_date,
+    CASE
+        WHEN o.orders_in_last_12_months = 1 THEN 'New'
+        WHEN o.orders_in_last_12_months BETWEEN 2 AND 4 THEN 'Returning'
+        WHEN o.orders_in_last_12_months >= 5 THEN 'VIP'
+        ELSE 'Unknown'
+    END AS order_segment
+FROM
+    order_counts o
+ORDER BY
+    o.order_date, o.client_id;
+
+
+[0m15:00:40.602570 [debug] [Thread-3 (]: On model.take_home_challenge.orders_2022_2023_with_qty: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "take_home_challenge", "target_name": "dev", "node_id": "model.take_home_challenge.orders_2022_2023_with_qty"} */
+
+
+  create or replace view `takehomechallenge`.`orders_recrutement`.`orders_2022_2023_with_qty`
+  OPTIONS()
+  as SELECT
+    o.date_date AS order_date,
+    o.customers_id,
+    o.orders_id,
+    o.CA_ht,
+    SUM(s.qty) AS qty_product  -- Calcul de la quantité totale de produits par commande
+FROM
+    takehomechallenge.orders_recrutement.orders o
+JOIN
+    takehomechallenge.sales_recrutement.sales s
+ON
+    o.customers_id = s.client_id
+    AND o.orders_id = s.transaction_id  -- Lier chaque commande à ses produits
+WHERE
+    EXTRACT(YEAR FROM o.date_date) IN (2022, 2023)  -- Filtrer pour 2022 et 2023
+GROUP BY
+    o.date_date, o.customers_id, o.orders_id, o.CA_ht
+ORDER BY
+    o.date_date, o.orders_id;
+
+
+[0m15:00:40.603603 [debug] [Thread-4 (]: On model.take_home_challenge.orders_2023: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "take_home_challenge", "target_name": "dev", "node_id": "model.take_home_challenge.orders_2023"} */
+
+
+  create or replace view `takehomechallenge`.`orders_recrutement`.`orders_2023`
+  OPTIONS()
+  as SELECT
+    COUNT(*) AS total_orders_2023
+FROM
+    takehomechallenge.orders_recrutement.orders
+WHERE
+    EXTRACT(YEAR FROM date_date) = 2023;
+
+
+[0m15:00:41.470166 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=takehomechallenge&j=bq:EU:b3843e27-7651-4ece-9a46-6997f93c81fb&page=queryresults
+[0m15:00:41.476735 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=takehomechallenge&j=bq:EU:c8e51fda-53dc-4c03-b716-e4dfe1e2af5d&page=queryresults
+[0m15:00:41.477956 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=takehomechallenge&j=bq:EU:cd0e786a-1b69-490e-9635-5de04cc99c1e&page=queryresults
+[0m15:00:41.498327 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=takehomechallenge&j=bq:EU:7f011596-3674-4e1e-9f9d-737b484f6f9d&page=queryresults
+[0m15:00:42.006330 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '22287306-c7aa-44e7-ac70-754c972a2344', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9DB80D010>]}
+[0m15:00:42.009698 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '22287306-c7aa-44e7-ac70-754c972a2344', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9ECF94D40>]}
+[0m15:00:42.013667 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '22287306-c7aa-44e7-ac70-754c972a2344', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9EEF8A420>]}
+[0m15:00:42.017279 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '22287306-c7aa-44e7-ac70-754c972a2344', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9EEF8AED0>]}
+[0m15:00:42.019434 [info ] [Thread-3 (]: 3 of 6 OK created sql view model orders_recrutement.orders_2022_2023_with_qty .. [[32mCREATE VIEW (0 processed)[0m in 1.48s]
+[0m15:00:42.021826 [info ] [Thread-1 (]: 1 of 6 OK created sql view model orders_recrutement.avg_products_per_order ..... [[32mCREATE VIEW (0 processed)[0m in 1.49s]
+[0m15:00:42.022834 [info ] [Thread-2 (]: 2 of 6 OK created sql view model orders_recrutement.order_segmentation ......... [[32mCREATE VIEW (0 processed)[0m in 1.49s]
+[0m15:00:42.024856 [info ] [Thread-4 (]: 4 of 6 OK created sql view model orders_recrutement.orders_2023 ................ [[32mCREATE VIEW (0 processed)[0m in 1.50s]
+[0m15:00:42.025363 [debug] [Thread-3 (]: Finished running node model.take_home_challenge.orders_2022_2023_with_qty
+[0m15:00:42.027505 [debug] [Thread-1 (]: Finished running node model.take_home_challenge.avg_products_per_order
+[0m15:00:42.028513 [debug] [Thread-2 (]: Finished running node model.take_home_challenge.order_segmentation
+[0m15:00:42.029831 [debug] [Thread-4 (]: Finished running node model.take_home_challenge.orders_2023
+[0m15:00:42.031301 [debug] [Thread-3 (]: Began running node model.take_home_challenge.orders_2023_with_segmentation
+[0m15:00:42.033914 [debug] [Thread-1 (]: Began running node model.take_home_challenge.orders_by_month
+[0m15:00:42.036021 [info ] [Thread-3 (]: 5 of 6 START sql view model orders_recrutement.orders_2023_with_segmentation ... [RUN]
+[0m15:00:42.037522 [info ] [Thread-1 (]: 6 of 6 START sql view model orders_recrutement.orders_by_month ................. [RUN]
+[0m15:00:42.038680 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.take_home_challenge.orders_2022_2023_with_qty, now model.take_home_challenge.orders_2023_with_segmentation)
+[0m15:00:42.039970 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.take_home_challenge.avg_products_per_order, now model.take_home_challenge.orders_by_month)
+[0m15:00:42.041341 [debug] [Thread-3 (]: Began compiling node model.take_home_challenge.orders_2023_with_segmentation
+[0m15:00:42.042365 [debug] [Thread-1 (]: Began compiling node model.take_home_challenge.orders_by_month
+[0m15:00:42.045449 [debug] [Thread-3 (]: Writing injected SQL for node "model.take_home_challenge.orders_2023_with_segmentation"
+[0m15:00:42.049540 [debug] [Thread-1 (]: Writing injected SQL for node "model.take_home_challenge.orders_by_month"
+[0m15:00:42.052628 [debug] [Thread-3 (]: Began executing node model.take_home_challenge.orders_2023_with_segmentation
+[0m15:00:42.057024 [debug] [Thread-3 (]: Writing runtime sql for node "model.take_home_challenge.orders_2023_with_segmentation"
+[0m15:00:42.057024 [debug] [Thread-1 (]: Began executing node model.take_home_challenge.orders_by_month
+[0m15:00:42.061024 [debug] [Thread-1 (]: Writing runtime sql for node "model.take_home_challenge.orders_by_month"
+[0m15:00:42.062026 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m15:00:42.064025 [debug] [Thread-3 (]: On model.take_home_challenge.orders_2023_with_segmentation: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "take_home_challenge", "target_name": "dev", "node_id": "model.take_home_challenge.orders_2023_with_segmentation"} */
+
+
+  create or replace view `takehomechallenge`.`orders_recrutement`.`orders_2023_with_segmentation`
+  OPTIONS()
+  as WITH order_counts AS (
+    SELECT
+        o.orders_id,
+        o.customers_id AS client_id,
+        o.date_date AS order_date,
+        o.CA_ht,  -- Assurez-vous de sélectionner CA_ht dans la sous-requête
+        COUNT(*) OVER (
+            PARTITION BY o.customers_id
+            ORDER BY o.date_date
+            ROWS BETWEEN 12 PRECEDING AND CURRENT ROW
+        ) AS orders_in_last_12_months
+    FROM
+        takehomechallenge.orders_recrutement.orders o
+    WHERE
+        EXTRACT(YEAR FROM o.date_date) = 2023
+)
+SELECT
+    o.orders_id,
+    o.client_id,
+    o.order_date,
+    o.CA_ht,
+    CASE
+        WHEN o.orders_in_last_12_months = 1 THEN 'New'
+        WHEN o.orders_in_last_12_months BETWEEN 2 AND 4 THEN 'Returning'
+        WHEN o.orders_in_last_12_months >= 5 THEN 'VIP'
+        ELSE 'Unknown'
+    END AS order_segmentation
+FROM
+    order_counts o;
+
+
+[0m15:00:42.065030 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:00:42.091673 [debug] [Thread-1 (]: On model.take_home_challenge.orders_by_month: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "take_home_challenge", "target_name": "dev", "node_id": "model.take_home_challenge.orders_by_month"} */
+
+
+  create or replace view `takehomechallenge`.`orders_recrutement`.`orders_by_month`
+  OPTIONS()
+  as SELECT
+    EXTRACT(MONTH FROM date_date) AS month,
+    COUNT(*) AS total_orders
+FROM
+    takehomechallenge.orders_recrutement.orders
+WHERE
+    EXTRACT(YEAR FROM date_date) = 2023
+GROUP BY
+    month
+ORDER BY
+    month;
+
+
+[0m15:00:42.904101 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=takehomechallenge&j=bq:EU:224019fb-cf0b-4ade-a8e1-6b7a1baebfce&page=queryresults
+[0m15:00:42.913189 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=takehomechallenge&j=bq:EU:cedddf98-ae80-46c4-8569-2e072904e73c&page=queryresults
+[0m15:00:43.365286 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '22287306-c7aa-44e7-ac70-754c972a2344', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9EF3A3EF0>]}
+[0m15:00:43.367594 [info ] [Thread-3 (]: 5 of 6 OK created sql view model orders_recrutement.orders_2023_with_segmentation  [[32mCREATE VIEW (0 processed)[0m in 1.33s]
+[0m15:00:43.369792 [debug] [Thread-3 (]: Finished running node model.take_home_challenge.orders_2023_with_segmentation
+[0m15:00:43.426046 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '22287306-c7aa-44e7-ac70-754c972a2344', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9EF3A3A10>]}
+[0m15:00:43.428325 [info ] [Thread-1 (]: 6 of 6 OK created sql view model orders_recrutement.orders_by_month ............ [[32mCREATE VIEW (0 processed)[0m in 1.39s]
+[0m15:00:43.430328 [debug] [Thread-1 (]: Finished running node model.take_home_challenge.orders_by_month
+[0m15:00:43.433412 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:00:43.434421 [debug] [MainThread]: Connection 'list_takehomechallenge' was properly closed.
+[0m15:00:43.434421 [debug] [MainThread]: Connection 'list_takehomechallenge_orders_recrutement' was properly closed.
+[0m15:00:43.434421 [debug] [MainThread]: Connection 'model.take_home_challenge.orders_by_month' was properly closed.
+[0m15:00:43.435805 [debug] [MainThread]: Connection 'model.take_home_challenge.order_segmentation' was properly closed.
+[0m15:00:43.435805 [debug] [MainThread]: Connection 'model.take_home_challenge.orders_2023_with_segmentation' was properly closed.
+[0m15:00:43.435805 [debug] [MainThread]: Connection 'model.take_home_challenge.orders_2023' was properly closed.
+[0m15:00:43.437038 [info ] [MainThread]: 
+[0m15:00:43.437038 [info ] [MainThread]: Finished running 6 view models in 0 hours 0 minutes and 3.93 seconds (3.93s).
+[0m15:00:43.439044 [debug] [MainThread]: Command end result
+[0m15:00:43.467360 [info ] [MainThread]: 
+[0m15:00:43.468405 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:00:43.469396 [info ] [MainThread]: 
+[0m15:00:43.469396 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=0 SKIP=0 TOTAL=6
+[0m15:00:43.471008 [debug] [MainThread]: Command `dbt run` succeeded at 15:00:43.471008 after 6.33 seconds
+[0m15:00:43.472018 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9DB685F70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9DBE2B7D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9DBE29A60>]}
+[0m15:00:43.472018 [debug] [MainThread]: Flushing usage events
+[0m15:11:37.283884 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAB4D46210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAB6837D10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAB6836F30>]}
+
+
+============================== 15:11:37.287652 | dace8485-0968-4765-8e70-9f8b13900660 ==============================
+[0m15:11:37.287652 [info ] [MainThread]: Running with dbt=1.8.7
+[0m15:11:37.288667 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\thoma\\.dbt', 'log_path': 'C:\\Users\\thoma\\PycharmProjects\\Take-Home challenge\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt run --full-refresh', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:11:41.225212 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'dace8485-0968-4765-8e70-9f8b13900660', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAB67DA9C0>]}
+[0m15:11:41.274687 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'dace8485-0968-4765-8e70-9f8b13900660', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAB6858500>]}
+[0m15:11:41.274687 [info ] [MainThread]: Registered adapter: bigquery=1.8.3
+[0m15:11:41.673406 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m15:11:42.292814 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 6 files changed.
+[0m15:11:42.293815 [debug] [MainThread]: Partial parsing: updated file: take_home_challenge://models\orders_2023_with_segmentation.sql
+[0m15:11:42.293815 [debug] [MainThread]: Partial parsing: updated file: take_home_challenge://models\orders_2022_2023_with_qty.sql
+[0m15:11:42.294815 [debug] [MainThread]: Partial parsing: updated file: take_home_challenge://models\orders_by_month.sql
+[0m15:11:42.294815 [debug] [MainThread]: Partial parsing: updated file: take_home_challenge://models\orders_2023.sql
+[0m15:11:42.295824 [debug] [MainThread]: Partial parsing: updated file: take_home_challenge://models\order_segmentation.sql
+[0m15:11:42.295824 [debug] [MainThread]: Partial parsing: updated file: take_home_challenge://models\avg_products_per_order.sql
+[0m15:11:42.535273 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'dace8485-0968-4765-8e70-9f8b13900660', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FACA5D69C0>]}
+[0m15:11:42.642704 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'dace8485-0968-4765-8e70-9f8b13900660', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FACA70BD70>]}
+[0m15:11:42.642704 [info ] [MainThread]: Found 6 models, 2 sources, 484 macros
+[0m15:11:42.643894 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'dace8485-0968-4765-8e70-9f8b13900660', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FACA452240>]}
+[0m15:11:42.645058 [info ] [MainThread]: 
+[0m15:11:42.646112 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m15:11:42.650070 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_takehomechallenge'
+[0m15:11:42.651318 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:11:43.199868 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_takehomechallenge_orders_recrutement'
+[0m15:11:43.202842 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:11:43.623171 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'dace8485-0968-4765-8e70-9f8b13900660', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAB5304D10>]}
+[0m15:11:43.624803 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:11:43.627312 [info ] [MainThread]: 
+[0m15:11:43.639557 [debug] [Thread-1 (]: Began running node model.take_home_challenge.avg_products_per_order
+[0m15:11:43.641855 [debug] [Thread-2 (]: Began running node model.take_home_challenge.order_segmentation
+[0m15:11:43.642845 [debug] [Thread-3 (]: Began running node model.take_home_challenge.orders_2022_2023_with_qty
+[0m15:11:43.642845 [debug] [Thread-4 (]: Began running node model.take_home_challenge.orders_2023
+[0m15:11:43.644080 [info ] [Thread-1 (]: 1 of 6 START sql view model orders_recrutement.avg_products_per_order .......... [RUN]
+[0m15:11:43.645284 [info ] [Thread-2 (]: 2 of 6 START sql view model orders_recrutement.order_segmentation .............. [RUN]
+[0m15:11:43.647415 [info ] [Thread-3 (]: 3 of 6 START sql view model orders_recrutement.orders_2022_2023_with_qty ....... [RUN]
+[0m15:11:43.649416 [info ] [Thread-4 (]: 4 of 6 START sql view model orders_recrutement.orders_2023 ..................... [RUN]
+[0m15:11:43.651415 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.take_home_challenge.avg_products_per_order'
+[0m15:11:43.652432 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.take_home_challenge.order_segmentation'
+[0m15:11:43.653922 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.take_home_challenge.orders_2022_2023_with_qty'
+[0m15:11:43.655321 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.take_home_challenge.orders_2023'
+[0m15:11:43.656734 [debug] [Thread-1 (]: Began compiling node model.take_home_challenge.avg_products_per_order
+[0m15:11:43.657743 [debug] [Thread-2 (]: Began compiling node model.take_home_challenge.order_segmentation
+[0m15:11:43.658863 [debug] [Thread-3 (]: Began compiling node model.take_home_challenge.orders_2022_2023_with_qty
+[0m15:11:43.658863 [debug] [Thread-4 (]: Began compiling node model.take_home_challenge.orders_2023
+[0m15:11:43.671747 [debug] [Thread-1 (]: Writing injected SQL for node "model.take_home_challenge.avg_products_per_order"
+[0m15:11:43.674027 [debug] [Thread-2 (]: Writing injected SQL for node "model.take_home_challenge.order_segmentation"
+[0m15:11:43.675892 [debug] [Thread-3 (]: Writing injected SQL for node "model.take_home_challenge.orders_2022_2023_with_qty"
+[0m15:11:43.678166 [debug] [Thread-4 (]: Writing injected SQL for node "model.take_home_challenge.orders_2023"
+[0m15:11:43.680312 [debug] [Thread-1 (]: Began executing node model.take_home_challenge.avg_products_per_order
+[0m15:11:43.680312 [debug] [Thread-2 (]: Began executing node model.take_home_challenge.order_segmentation
+[0m15:11:43.693146 [debug] [Thread-4 (]: Began executing node model.take_home_challenge.orders_2023
+[0m15:11:43.710266 [debug] [Thread-1 (]: Writing runtime sql for node "model.take_home_challenge.avg_products_per_order"
+[0m15:11:43.710266 [debug] [Thread-3 (]: Began executing node model.take_home_challenge.orders_2022_2023_with_qty
+[0m15:11:43.712270 [debug] [Thread-2 (]: Writing runtime sql for node "model.take_home_challenge.order_segmentation"
+[0m15:11:43.714909 [debug] [Thread-4 (]: Writing runtime sql for node "model.take_home_challenge.orders_2023"
+[0m15:11:43.718387 [debug] [Thread-3 (]: Writing runtime sql for node "model.take_home_challenge.orders_2022_2023_with_qty"
+[0m15:11:43.718891 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m15:11:43.719986 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m15:11:43.719986 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m15:11:43.721991 [debug] [Thread-1 (]: On model.take_home_challenge.avg_products_per_order: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "take_home_challenge", "target_name": "dev", "node_id": "model.take_home_challenge.avg_products_per_order"} */
+
+
+  create or replace view `takehomechallenge`.`orders_recrutement`.`avg_products_per_order`
+  OPTIONS()
+  as -- Exercice 3 : Calculer le nombre moyen de produits par commande pour chaque mois de l'année 2023.
+
+SELECT
+    EXTRACT(MONTH FROM date_date) AS month, -- Extraire le mois à partir de la date et renommer la colonne en "month".
+    AVG(qty) AS avg_products_per_order -- Calculer la moyenne des quantités de produits par commande pour chaque mois.
+FROM
+    takehomechallenge.sales_recrutement.sales -- Table contenant les lignes de vente par produit.
+WHERE
+    EXTRACT(YEAR FROM date_date) = 2023 -- Filtrer uniquement les données pour l'année 2023.
+GROUP BY
+    month -- Grouper les résultats par mois pour calculer une moyenne distincte pour chaque mois.
+ORDER BY
+    month -- Trier les résultats dans l'ordre croissant des mois.;
+
+
+[0m15:11:43.722991 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m15:11:43.723991 [debug] [Thread-2 (]: On model.take_home_challenge.order_segmentation: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "take_home_challenge", "target_name": "dev", "node_id": "model.take_home_challenge.order_segmentation"} */
+
+
+  create or replace view `takehomechallenge`.`orders_recrutement`.`order_segmentation`
+  OPTIONS()
+  as -- Exercice 5 : Segmentation des commandes
+-- Les commandes de 2023 sont classées en 3 segments :
+-- - 'New' : Première commande du client dans les 12 derniers mois.
+-- - 'Returning' : Entre la 2ᵉ et la 4ᵉ commande du client dans les 12 derniers mois.
+-- - 'VIP' : 5ᵉ commande ou plus du client dans les 12 derniers mois.
+
+WITH order_counts AS (
+    SELECT
+        o.orders_id, -- Identifiant unique de la commande.
+        o.customers_id AS client_id, -- Identifiant du client ayant passé la commande.
+        o.date_date AS order_date, -- Date de la commande.
+        COUNT(*) OVER (
+            PARTITION BY o.customers_id -- Segmenter par client.
+            ORDER BY o.date_date -- Trier les commandes par date.
+            ROWS BETWEEN 12 PRECEDING AND CURRENT ROW -- Inclure les commandes des 12 derniers mois.
+        ) AS orders_in_last_12_months -- Compte le nombre total de commandes passées par le client dans les 12 derniers mois.
+    FROM
+        takehomechallenge.orders_recrutement.orders o -- Table des commandes.
+    WHERE
+        EXTRACT(YEAR FROM o.date_date) = 2023 -- Filtrer pour les commandes passées uniquement en 2023.
+)
+SELECT
+    o.orders_id, -- Identifiant de la commande.
+    o.client_id, -- Identifiant du client.
+    o.order_date, -- Date de la commande.
+    CASE
+        WHEN o.orders_in_last_12_months = 1 THEN 'New' -- Si c'est la première commande dans les 12 derniers mois.
+        WHEN o.orders_in_last_12_months BETWEEN 2 AND 4 THEN 'Returning' -- Si c'est entre la 2ᵉ et la 4ᵉ commande.
+        WHEN o.orders_in_last_12_months >= 5 THEN 'VIP' -- Si c'est la 5ᵉ commande ou plus.
+        ELSE 'Unknown' -- Par défaut, si aucune des conditions ci-dessus n'est remplie.
+    END AS order_segment -- Segment de la commande (New, Returning, VIP, ou Unknown).
+FROM
+    order_counts o -- Sous-requête contenant le comptage des commandes.
+ORDER BY
+    o.order_date, -- Trier les résultats par date de commande pour une chronologie claire.
+    o.client_id; -- Trier également par identifiant de client pour regrouper les commandes par client.;
+
+
+[0m15:11:43.726002 [debug] [Thread-4 (]: On model.take_home_challenge.orders_2023: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "take_home_challenge", "target_name": "dev", "node_id": "model.take_home_challenge.orders_2023"} */
+
+
+  create or replace view `takehomechallenge`.`orders_recrutement`.`orders_2023`
+  OPTIONS()
+  as -- Exercice 1 : Calculer le nombre total de commandes passées en 2023.
+
+-- Utilisation de la fonction COUNT(*) pour compter toutes les lignes dans la table "orders".
+-- Chaque ligne représente une commande unique.
+
+SELECT
+    COUNT(*) AS total_orders_2023 -- Renommer le résultat sous le nom "total_orders_2023" pour indiquer le nombre total de commandes.
+FROM
+    takehomechallenge.orders_recrutement.orders -- Table contenant les données des commandes.
+WHERE
+    EXTRACT(YEAR FROM date_date) = 2023 -- Filtrer uniquement les commandes dont la date se situe en 2023.;
+
+
+[0m15:11:43.751131 [debug] [Thread-3 (]: On model.take_home_challenge.orders_2022_2023_with_qty: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "take_home_challenge", "target_name": "dev", "node_id": "model.take_home_challenge.orders_2022_2023_with_qty"} */
+
+
+  create or replace view `takehomechallenge`.`orders_recrutement`.`orders_2022_2023_with_qty`
+  OPTIONS()
+  as -- Exercice 4 : Créer une table avec une ligne par commande pour les années 2022 et 2023,
+-- en ajoutant une colonne `qty_product` qui donne la quantité totale de produits par commande.
+
+SELECT
+    o.date_date AS order_date, -- Renommer la colonne `date_date` en `order_date` pour plus de clarté.
+    o.customers_id, -- Inclure l'identifiant du client associé à la commande.
+    o.orders_id, -- Inclure l'identifiant unique de la commande.
+    o.CA_ht, -- Inclure le chiffre d'affaires hors taxes associé à la commande.
+    SUM(s.qty) AS qty_product -- Calculer la quantité totale de produits pour chaque commande.
+FROM
+    takehomechallenge.orders_recrutement.orders o -- Table contenant les informations sur les commandes.
+JOIN
+    takehomechallenge.sales_recrutement.sales s -- Table contenant les détails des ventes par produit.
+ON
+    o.customers_id = s.client_id -- Faire correspondre les clients entre les tables `orders` et `sales`.
+    AND o.orders_id = s.transaction_id -- Associer chaque commande à ses produits via `orders_id` et `transaction_id`.
+WHERE
+    EXTRACT(YEAR FROM o.date_date) IN (2022, 2023) -- Filtrer les commandes des années 2022 et 2023 uniquement.
+GROUP BY
+    o.date_date, -- Grouper par la date de commande.
+    o.customers_id, -- Grouper par l'identifiant du client.
+    o.orders_id, -- Grouper par l'identifiant de la commande.
+    o.CA_ht -- Grouper par le chiffre d'affaires hors taxes.
+ORDER BY
+    o.date_date, -- Trier les résultats par date de commande pour un affichage chronologique.
+    o.orders_id; -- Trier également par l'identifiant de la commande pour un ordre cohérent.;
+
+
+[0m15:11:44.398142 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=takehomechallenge&j=bq:EU:a3f23f35-291e-437a-962b-2daa936f0209&page=queryresults
+[0m15:11:44.504992 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=takehomechallenge&j=bq:EU:6581dbb5-1acd-4b5c-9749-97329960d17d&page=queryresults
+[0m15:11:44.529380 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=takehomechallenge&j=bq:EU:362770ab-5812-46b5-90b3-43d9a190fd33&page=queryresults
+[0m15:11:44.554680 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=takehomechallenge&j=bq:EU:c588505f-91b8-4ae2-9175-75cecd1e69ca&page=queryresults
+[0m15:11:44.964703 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dace8485-0968-4765-8e70-9f8b13900660', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FACA656990>]}
+[0m15:11:44.969994 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dace8485-0968-4765-8e70-9f8b13900660', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FACABD9490>]}
+[0m15:11:44.972025 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dace8485-0968-4765-8e70-9f8b13900660', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FACABC3CB0>]}
+[0m15:11:44.972025 [info ] [Thread-1 (]: 1 of 6 OK created sql view model orders_recrutement.avg_products_per_order ..... [[32mCREATE VIEW (0 processed)[0m in 1.23s]
+[0m15:11:44.973014 [info ] [Thread-4 (]: 4 of 6 OK created sql view model orders_recrutement.orders_2023 ................ [[32mCREATE VIEW (0 processed)[0m in 1.31s]
+[0m15:11:44.974306 [info ] [Thread-2 (]: 2 of 6 OK created sql view model orders_recrutement.order_segmentation ......... [[32mCREATE VIEW (0 processed)[0m in 1.32s]
+[0m15:11:44.974306 [debug] [Thread-1 (]: Finished running node model.take_home_challenge.avg_products_per_order
+[0m15:11:44.975358 [debug] [Thread-4 (]: Finished running node model.take_home_challenge.orders_2023
+[0m15:11:44.975358 [debug] [Thread-2 (]: Finished running node model.take_home_challenge.order_segmentation
+[0m15:11:44.976778 [debug] [Thread-1 (]: Began running node model.take_home_challenge.orders_2023_with_segmentation
+[0m15:11:44.976778 [debug] [Thread-4 (]: Began running node model.take_home_challenge.orders_by_month
+[0m15:11:44.977781 [info ] [Thread-1 (]: 5 of 6 START sql view model orders_recrutement.orders_2023_with_segmentation ... [RUN]
+[0m15:11:44.979293 [info ] [Thread-4 (]: 6 of 6 START sql view model orders_recrutement.orders_by_month ................. [RUN]
+[0m15:11:44.979293 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.take_home_challenge.avg_products_per_order, now model.take_home_challenge.orders_2023_with_segmentation)
+[0m15:11:44.980325 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.take_home_challenge.orders_2023, now model.take_home_challenge.orders_by_month)
+[0m15:11:44.980325 [debug] [Thread-1 (]: Began compiling node model.take_home_challenge.orders_2023_with_segmentation
+[0m15:11:44.981435 [debug] [Thread-4 (]: Began compiling node model.take_home_challenge.orders_by_month
+[0m15:11:44.983404 [debug] [Thread-1 (]: Writing injected SQL for node "model.take_home_challenge.orders_2023_with_segmentation"
+[0m15:11:44.984460 [debug] [Thread-4 (]: Writing injected SQL for node "model.take_home_challenge.orders_by_month"
+[0m15:11:44.986753 [debug] [Thread-4 (]: Began executing node model.take_home_challenge.orders_by_month
+[0m15:11:44.986753 [debug] [Thread-1 (]: Began executing node model.take_home_challenge.orders_2023_with_segmentation
+[0m15:11:44.989790 [debug] [Thread-4 (]: Writing runtime sql for node "model.take_home_challenge.orders_by_month"
+[0m15:11:44.993791 [debug] [Thread-1 (]: Writing runtime sql for node "model.take_home_challenge.orders_2023_with_segmentation"
+[0m15:11:44.994792 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m15:11:44.995792 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:11:44.997791 [debug] [Thread-4 (]: On model.take_home_challenge.orders_by_month: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "take_home_challenge", "target_name": "dev", "node_id": "model.take_home_challenge.orders_by_month"} */
+
+
+  create or replace view `takehomechallenge`.`orders_recrutement`.`orders_by_month`
+  OPTIONS()
+  as -- Exercice 2 : Calculer le nombre de commandes par mois en 2023.
+
+-- La fonction EXTRACT permet d'extraire le mois à partir de la colonne date_date.
+-- La fonction COUNT(*) compte le nombre total de commandes pour chaque mois.
+
+SELECT
+    EXTRACT(MONTH FROM date_date) AS month, -- Extraire le mois à partir de la date de chaque commande et renommer la colonne en "month".
+    COUNT(*) AS total_orders -- Compter le nombre total de commandes pour chaque mois et renommer la colonne en "total_orders".
+FROM
+    takehomechallenge.orders_recrutement.orders -- Table contenant les données des commandes.
+WHERE
+    EXTRACT(YEAR FROM date_date) = 2023 -- Filtrer les commandes pour l'année 2023 uniquement.
+GROUP BY
+    month -- Grouper les résultats par mois pour obtenir un total distinct de commandes pour chaque mois.
+ORDER BY
+    month -- Trier les résultats dans l'ordre croissant des mois.;
+
+
+[0m15:11:45.026807 [debug] [Thread-1 (]: On model.take_home_challenge.orders_2023_with_segmentation: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "take_home_challenge", "target_name": "dev", "node_id": "model.take_home_challenge.orders_2023_with_segmentation"} */
+
+
+  create or replace view `takehomechallenge`.`orders_recrutement`.`orders_2023_with_segmentation`
+  OPTIONS()
+  as -- Exercice 6 : Création d'une table pour les commandes de 2023 avec segmentation
+-- Cette requête crée une table contenant toutes les commandes de l'année 2023,
+-- avec une colonne supplémentaire : `order_segmentation` qui attribue un segment à chaque commande.
+
+WITH order_counts AS (
+    SELECT
+        o.orders_id, -- Identifiant unique de la commande.
+        o.customers_id AS client_id, -- Identifiant du client ayant passé la commande.
+        o.date_date AS order_date, -- Date de la commande.
+        o.CA_ht, -- Montant total hors taxes de la commande.
+        COUNT(*) OVER (
+            PARTITION BY o.customers_id -- Comptage des commandes par client.
+            ORDER BY o.date_date -- Trier les commandes par date.
+            ROWS BETWEEN 12 PRECEDING AND CURRENT ROW -- Inclure les commandes des 12 derniers mois.
+        ) AS orders_in_last_12_months -- Nombre total de commandes passées par le client dans les 12 derniers mois.
+    FROM
+        takehomechallenge.orders_recrutement.orders o -- Table des commandes.
+    WHERE
+        EXTRACT(YEAR FROM o.date_date) = 2023 -- Filtrer pour inclure uniquement les commandes passées en 2023.
+)
+SELECT
+    o.orders_id, -- Identifiant de la commande.
+    o.client_id, -- Identifiant du client.
+    o.order_date, -- Date de la commande.
+    o.CA_ht, -- Montant total hors taxes de la commande.
+    CASE
+        WHEN o.orders_in_last_12_months = 1 THEN 'New' -- Si c'est la première commande dans les 12 derniers mois.
+        WHEN o.orders_in_last_12_months BETWEEN 2 AND 4 THEN 'Returning' -- Si c'est entre la 2ᵉ et la 4ᵉ commande.
+        WHEN o.orders_in_last_12_months >= 5 THEN 'VIP' -- Si c'est la 5ᵉ commande ou plus.
+        ELSE 'Unknown' -- Par défaut, si aucune des conditions ci-dessus n'est remplie.
+    END AS order_segmentation -- Segment de la commande (New, Returning, VIP, ou Unknown).
+FROM
+    order_counts o; -- Sous-requête contenant les informations nécessaires.;
+
+
+[0m15:11:45.089545 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dace8485-0968-4765-8e70-9f8b13900660', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FACABD9E80>]}
+[0m15:11:45.090543 [info ] [Thread-3 (]: 3 of 6 OK created sql view model orders_recrutement.orders_2022_2023_with_qty .. [[32mCREATE VIEW (0 processed)[0m in 1.44s]
+[0m15:11:45.093051 [debug] [Thread-3 (]: Finished running node model.take_home_challenge.orders_2022_2023_with_qty
+[0m15:11:45.920581 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=takehomechallenge&j=bq:EU:a7ae7881-a28b-4455-a1b5-eae5bee1ee84&page=queryresults
+[0m15:11:45.922581 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=takehomechallenge&j=bq:EU:903748f4-48ac-4780-a9a5-391581ff2ffe&page=queryresults
+[0m15:11:46.222979 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dace8485-0968-4765-8e70-9f8b13900660', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FACA1E8590>]}
+[0m15:11:46.224979 [info ] [Thread-1 (]: 5 of 6 OK created sql view model orders_recrutement.orders_2023_with_segmentation  [[32mCREATE VIEW (0 processed)[0m in 1.24s]
+[0m15:11:46.227033 [debug] [Thread-1 (]: Finished running node model.take_home_challenge.orders_2023_with_segmentation
+[0m15:11:46.238304 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dace8485-0968-4765-8e70-9f8b13900660', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FACABC89B0>]}
+[0m15:11:46.239916 [info ] [Thread-4 (]: 6 of 6 OK created sql view model orders_recrutement.orders_by_month ............ [[32mCREATE VIEW (0 processed)[0m in 1.26s]
+[0m15:11:46.243255 [debug] [Thread-4 (]: Finished running node model.take_home_challenge.orders_by_month
+[0m15:11:46.247462 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:11:46.250808 [debug] [MainThread]: Connection 'list_takehomechallenge' was properly closed.
+[0m15:11:46.251804 [debug] [MainThread]: Connection 'list_takehomechallenge_orders_recrutement' was properly closed.
+[0m15:11:46.251804 [debug] [MainThread]: Connection 'model.take_home_challenge.orders_2023_with_segmentation' was properly closed.
+[0m15:11:46.253219 [debug] [MainThread]: Connection 'model.take_home_challenge.order_segmentation' was properly closed.
+[0m15:11:46.253219 [debug] [MainThread]: Connection 'model.take_home_challenge.orders_2022_2023_with_qty' was properly closed.
+[0m15:11:46.254327 [debug] [MainThread]: Connection 'model.take_home_challenge.orders_by_month' was properly closed.
+[0m15:11:46.254327 [info ] [MainThread]: 
+[0m15:11:46.255494 [info ] [MainThread]: Finished running 6 view models in 0 hours 0 minutes and 3.61 seconds (3.61s).
+[0m15:11:46.258285 [debug] [MainThread]: Command end result
+[0m15:11:46.297692 [info ] [MainThread]: 
+[0m15:11:46.298684 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:11:46.298684 [info ] [MainThread]: 
+[0m15:11:46.300004 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=0 SKIP=0 TOTAL=6
+[0m15:11:46.302023 [debug] [MainThread]: Command `dbt run` succeeded at 15:11:46.302023 after 9.17 seconds
+[0m15:11:46.303312 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAB6FA57C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAB7568380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAB73565A0>]}
+[0m15:11:46.303312 [debug] [MainThread]: Flushing usage events
